@@ -37,4 +37,4 @@ sudo systemctl enable nginx
 <hr>
 
 <h2>Screenshot</h2>
-![Custom index page](../screenshots/customindex.png)
+<img src="../screenshots/customindex.png" alt="Custom index page" />
