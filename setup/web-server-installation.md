@@ -1,47 +1,43 @@
-# Web Server Installation
+<h1>Web Server Installation</h1>
 
-## 1. Installing Nginx
-\`\`\`bash
-sudo apt update
+<h2>1. Installing Nginx</h2>
+<pre><code>sudo apt update
 sudo apt -y install nginx
-\`\`\`
+</code></pre>
 
----
+<hr>
 
-## 2. Enabling and starting the service
-\`\`\`bash
-sudo systemctl start nginx
+<h2>2. Enabling and starting the service</h2>
+<pre><code>sudo systemctl start nginx
 sudo systemctl enable nginx
-\`\`\`
+</code></pre>
 
-Service status verified using:
+<p>Service status verified using:</p>
 
-\`\`\`bash
-sudo systemctl status nginx
-\`\`\`
+<pre><code>sudo systemctl status nginx
+</code></pre>
 
----
+<hr>
 
-## 3. Local service verification
-\`\`\`bash
-curl -I http://localhost
-\`\`\`
+<h2>3. Local service verification</h2>
+<pre><code>curl -I http://localhost
+</code></pre>
 
-Expected output:
+<p>Expected output:</p>
 
-\`\`\`
-200 OK -> Working
-\`\`\`
+<pre><code>200 OK -> Working
+</code></pre>
 
----
+<hr>
 
-## 4. Replacing the default web page with a custom index.html
-\`\`\`bash
-echo "<h1>Azure Web Server demo</h1><p>by Armand Lagoguey</p>" > /var/www/html/index.html
-\`\`\`
+<h2>4. Replacing the default web page with a custom index.html</h2>
+<pre><code>echo "&lt;h1&gt;Azure Web Server demo&lt;/h1&gt;&lt;p&gt;by Armand Lagoguey&lt;/p&gt;" &gt; /var/www/html/index.html
+</code></pre>
 
----
+<hr>
 
-## Screenshots
-- ../screenshots/customindex.png
-
+<h2>Screenshots</h2>
+<ul>
+  <li>../screenshots/customindex.png</li>
+  <li>../screenshots/ufwconfig.png</li>
+</ul>
