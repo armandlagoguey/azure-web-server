@@ -39,7 +39,7 @@ A **Network Security Group (NSG)** was configured with the following inbound rul
 - Deny all other inbound traffic  
 
 **Screenshot reference:**  
-- `nsgconfig.png`
+![NSG Configuration](../screenshots/nsgconfig.png)
 
 ---
 
@@ -47,13 +47,11 @@ A **Network Security Group (NSG)** was configured with the following inbound rul
 All resources were deployed inside a dedicated resource group.
 
 **Screenshot reference:**  
-- `resourcegroup.png`
-
+![Resource Group](../screenshots/resourcegroup.png)
 ---
 
 ## Validation
 After deployment, the VM was running, SSH access worked, and the web server was reachable.
 
 **Screenshot references:**  
-- `customindex.png`  
-- `ufwconfig.png`
+![Custom Web Page](../screenshots/customindex.png)
