@@ -2,8 +2,7 @@
 
 <h2>Overview</h2>
 <p>
-This project demonstrates the deployment, configuration, and hardening of a Linux-based web server hosted on Microsoft Azure.
-The objective was to create a functional public web server while applying essential security controls to reduce the attack surface and enforce secure access practices.
+My goal with this little project was to create a functional web server, in its most basic version, while ensuring its security and availability.
 </p>
 
 <p>The project includes:</p>
