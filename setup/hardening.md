@@ -1,15 +1,51 @@
-The objective of this hardening was to reduce the attack surface and have secure access controls.
+<h1>OS Hardening</h1>
 
-1. SSH-key only authentication
-  The SSH key pair was created during the VM deployment
-  The private key is stored securely on my PC
+<p>The objective of this hardening was to reduce the attack surface and have secure access controls.</p>
 
-2. Disabling PasswordAuthentication
-   The SSH configuration file (/etc/ssh/sshd_config) was updated to change "PasswordAuthentication" from "yes" to "no"
-   The SSH service was restarted to apply the change.
+<hr>
 
-3. UFW Firewall Rules
-   Rules Applied:Allow OpenSSH Allow, Nginx HTTP, Deny all other inbound traffic
+<h2>SSH‑key only authentication</h2>
+<ul>
+  <li>The SSH key pair was created during the VM deployment</li>
+  <li>The private key is stored securely on my PC</li>
+</ul>
 
-4. Azure NSG Restrictions
-  Inbound Rules: Allow SSH (22) from a single trusted IP address (mine), Allow HTTP (80) from any source, Deny for all other inbound traffic
+<hr>
+
+<h2>Disabling PasswordAuthentication</h2>
+<p>The SSH configuration file (<code>/etc/ssh/sshd_config</code>) was updated to change:</p>
+
+<pre><code>PasswordAuthentication yes
+</code></pre>
+
+<p>to:</p>
+
+<pre><code>PasswordAuthentication no
+</code></pre>
+
+<p>The SSH service was restarted to apply the change.</p>
+
+<hr>
+
+<h2>UFW Firewall Rules</h2>
+<p><strong>Rules Applied:</strong></p>
+<ul>
+  <li>Allow OpenSSH</li>
+  <li>Allow Nginx HTTP</li>
+  <li>Deny all other inbound traffic</li>
+</ul>
+
+<p><strong>Screenshot:</strong></p>
+<p>
+  <img src="../screenshots/ufwconfig.png" alt="UFW configuration screenshot">
+</p>
+
+<hr>
+
+<h2>Azure NSG Restrictions</h2>
+<p><strong>Inbound Rules:</strong></p>
+<ul>
+  <li>Allow SSH (22) from a single trusted IP address (mine)</li>
+  <li>Allow HTTP (80) from any source</li>
+  <li>Deny all other inbound traffic</li>
+</ul>
