@@ -17,8 +17,6 @@ My goal with this little project was to create a functional web server powered b
 
 <h2>Architecture Overview</h2>
 
-<p>User (SSH) → Public IP → Azure NSG → VM (Ubuntu) → Nginx Web Server<br>
-User (HTTP) → Public IP → Azure NSG → VM (Port 80)</p>
 
 <p>Resources deployed:</p>
 <ul>
