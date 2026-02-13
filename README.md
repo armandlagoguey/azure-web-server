@@ -28,6 +28,7 @@ User (HTTP) → Public IP → Azure NSG → VM (Port 80)</p>
   <li>1 Virtual Network + Subnet</li>
   <li>UFW firewall on the VM</li>
 </ul>
+<p><img src="architecture/architecture_diagram.png"></p>
 
 
 
