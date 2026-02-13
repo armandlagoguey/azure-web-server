@@ -36,8 +36,5 @@ sudo systemctl enable nginx
 
 <hr>
 
-<h2>Screenshots</h2>
-<ul>
-  <li>../screenshots/customindex.png</li>
-  <li>../screenshots/ufwconfig.png</li>
-</ul>
+<h2>Screenshot</h2>
+![Custom index page](../screenshots/customindex.png)
