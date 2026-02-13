@@ -2,7 +2,7 @@
 
 <h2>Overview</h2>
 <p>
-My goal with this little project was to create a functional web server, in its most basic version, while ensuring its security and availability.
+My goal with this little project was to create a functional web server powered by Azure, in its most basic version, while ensuring its security and availability.
 </p>
 
 <p>The project includes:</p>
