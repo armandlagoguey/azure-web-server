@@ -1,3 +1,0 @@
--SSH key authentication
--SSH restricted to a single IP
--Firewall enabled with minimal rule
